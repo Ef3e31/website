@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre Papier Ciseaux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="scoreboard">
+        <p>Score Joueur : <span id="player-score">0</span></p>
+        <h2>VS</h2>
+        <p>Score Robot : <span id="bot-score">0</span></p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" onclick="play('pierre', this)">
+            <img src="./images/pierre.png" alt="Pierre">
+        </div>
+        <div class="choice" onclick="play('feuille', this)">
+            <img src="./images/papier.png" alt="Feuille">
+        </div>
+        <div class="choice" onclick="play('ciseaux', this)">
+            <img src="./images/ciseaux.png" alt="Ciseaux">
+        </div>
+    </div>
+
+    <div class="result-container">
+        <div id="result"></div>
+        <div id="victory-message"></div>
+    </div>
+
+    <button class="Btn">
+        Play again!
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
